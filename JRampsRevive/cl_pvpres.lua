@@ -23,9 +23,9 @@ Citizen.CreateThread(function()
         if isInMarker and not HasAlreadyGotMessage then
             HasAlreadyGotMessage = true
             local playerPos = GetEntityCoords(ped, true)
-            exports["taskbar"]:taskBar(2500,"Reviving...")
+            --exports["taskbar"]:taskBar(2500,"Reviving...")
             TriggerServerEvent('esx_ambulancejob:revive', GetPlayerServerId(closestPlayer))
-            exports['mythic_notify']:SendAlert('inform', 'Revived')
+            --exports['mythic_notify']:SendAlert('inform', 'Revived')
             print("SCDevelopment Discord.gg/mfF4GAjHEW")
             Wait(1000)
             AddArmourToPed(ped, 100)
